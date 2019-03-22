@@ -1,2 +1,5 @@
-import { conforms } from "../fp";
-export = conforms;
+import { _ } from "../fp";
+import LodashConformsTo = _.LodashConformsTo
+
+declare const conforms: LodashConformsTo;
+export default conforms;

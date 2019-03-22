@@ -1,2 +1,5 @@
-import { toLower } from "../fp";
-export = toLower;
+import { _ } from "../fp";
+import LodashToLower = _.LodashToLower
+
+declare const toLower: LodashToLower;
+export default toLower;

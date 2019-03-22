@@ -1,2 +1,5 @@
-import { functionsIn } from "../fp";
-export = functionsIn;
+import { _ } from "../fp";
+import LodashFunctionsIn = _.LodashFunctionsIn
+
+declare const functionsIn: LodashFunctionsIn;
+export default functionsIn;

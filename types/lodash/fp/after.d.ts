@@ -1,2 +1,5 @@
-import { after } from "../fp";
-export = after;
+import { _ } from "../fp";
+import LodashAfter = _.LodashAfter
+
+declare const after: LodashAfter;
+export default after;

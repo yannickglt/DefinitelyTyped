@@ -1,2 +1,5 @@
-import { findLastFrom } from "../fp";
-export = findLastFrom;
+import { _ } from "../fp";
+import LodashFindLast = _.LodashFindLast
+
+declare const findLastFrom: LodashFindLast;
+export default findLastFrom;

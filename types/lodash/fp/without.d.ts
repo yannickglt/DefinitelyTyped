@@ -1,2 +1,5 @@
-import { without } from "../fp";
-export = without;
+import { _ } from "../fp";
+import LodashWithout = _.LodashWithout
+
+declare const without: LodashWithout;
+export default without;

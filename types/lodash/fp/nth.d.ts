@@ -1,2 +1,5 @@
-import { nth } from "../fp";
-export = nth;
+import { _ } from "../fp";
+import LodashNth = _.LodashNth
+
+declare const nth: LodashNth;
+export default nth;

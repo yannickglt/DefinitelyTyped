@@ -1,2 +1,5 @@
-import { flatMap } from "../fp";
-export = flatMap;
+import { _ } from "../fp";
+import LodashFlatMap = _.LodashFlatMap
+
+declare const flatMap: LodashFlatMap;
+export default flatMap;

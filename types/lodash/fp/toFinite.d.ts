@@ -1,2 +1,5 @@
-import { toFinite } from "../fp";
-export = toFinite;
+import { _ } from "../fp";
+import LodashToFinite = _.LodashToFinite
+
+declare const toFinite: LodashToFinite;
+export default toFinite;

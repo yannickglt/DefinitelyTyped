@@ -1,2 +1,5 @@
-import { contains } from "../fp";
-export = contains;
+import { _ } from "../fp";
+import LodashIncludes = _.LodashIncludes
+
+declare const contains: LodashIncludes;
+export default contains;

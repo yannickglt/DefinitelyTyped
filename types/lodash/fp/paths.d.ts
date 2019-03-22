@@ -1,2 +1,5 @@
-import { paths } from "../fp";
-export = paths;
+import { _ } from "../fp";
+import LodashAt = _.LodashAt
+
+declare const paths: LodashAt;
+export default paths;

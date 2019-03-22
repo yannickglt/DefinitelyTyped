@@ -1,2 +1,5 @@
-import { rangeRight } from "../fp";
-export = rangeRight;
+import { _ } from "../fp";
+import LodashRangeRight = _.LodashRangeRight
+
+declare const rangeRight: LodashRangeRight;
+export default rangeRight;

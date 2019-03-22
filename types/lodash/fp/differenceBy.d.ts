@@ -1,2 +1,5 @@
-import { differenceBy } from "../fp";
-export = differenceBy;
+import { _ } from "../fp";
+import LodashDifferenceBy = _.LodashDifferenceBy
+
+declare const differenceBy: LodashDifferenceBy;
+export default differenceBy;

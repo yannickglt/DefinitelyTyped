@@ -1,2 +1,5 @@
-import { any } from "../fp";
-export = any;
+import { _ } from "../fp";
+import LodashSome = _.LodashSome
+
+declare const any: LodashSome;
+export default any;

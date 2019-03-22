@@ -1,2 +1,5 @@
-import { uniqWith } from "../fp";
-export = uniqWith;
+import { _ } from "../fp";
+import LodashUniqWith = _.LodashUniqWith
+
+declare const uniqWith: LodashUniqWith;
+export default uniqWith;

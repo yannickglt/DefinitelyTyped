@@ -1,2 +1,5 @@
-import { keysIn } from "../fp";
-export = keysIn;
+import { _ } from "../fp";
+import LodashKeysIn = _.LodashKeysIn
+
+declare const keysIn: LodashKeysIn;
+export default keysIn;

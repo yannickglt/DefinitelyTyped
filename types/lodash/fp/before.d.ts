@@ -1,2 +1,5 @@
-import { before } from "../fp";
-export = before;
+import { _ } from "../fp";
+import LodashBefore = _.LodashBefore
+
+declare const before: LodashBefore;
+export default before;

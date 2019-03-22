@@ -1,2 +1,5 @@
-import { random } from "../fp";
-export = random;
+import { _ } from "../fp";
+import LodashRandom = _.LodashRandom
+
+declare const random: LodashRandom;
+export default random;

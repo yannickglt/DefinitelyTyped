@@ -1,2 +1,5 @@
-import { fill } from "../fp";
-export = fill;
+import { _ } from "../fp";
+import LodashFill = _.LodashFill
+
+declare const fill: LodashFill;
+export default fill;

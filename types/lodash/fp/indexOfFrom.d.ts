@@ -1,2 +1,5 @@
-import { indexOfFrom } from "../fp";
-export = indexOfFrom;
+import { _ } from "../fp";
+import LodashIndexOf = _.LodashIndexOf
+
+declare const indexOfFrom: LodashIndexOf;
+export default indexOfFrom;

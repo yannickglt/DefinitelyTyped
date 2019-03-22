@@ -1,2 +1,5 @@
-import { startCase } from "../fp";
-export = startCase;
+import { _ } from "../fp";
+import LodashStartCase = _.LodashStartCase
+
+declare const startCase: LodashStartCase;
+export default startCase;

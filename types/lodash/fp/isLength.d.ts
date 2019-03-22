@@ -1,2 +1,5 @@
-import { isLength } from "../fp";
-export = isLength;
+import { _ } from "../fp";
+import LodashIsLength = _.LodashIsLength
+
+declare const isLength: LodashIsLength;
+export default isLength;

@@ -1,2 +1,5 @@
-import { extendAll } from "../fp";
-export = extendAll;
+import { _ } from "../fp";
+import LodashAssignIn = _.LodashAssignIn
+
+declare const extendAll: LodashAssignIn;
+export default extendAll;

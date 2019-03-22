@@ -1,2 +1,5 @@
-import { restFrom } from "../fp";
-export = restFrom;
+import { _ } from "../fp";
+import LodashRest = _.LodashRest
+
+declare const restFrom: LodashRest;
+export default restFrom;

@@ -1,2 +1,5 @@
-import { stubFalse } from "../fp";
-export = stubFalse;
+import { _ } from "../fp";
+import LodashStubFalse = _.LodashStubFalse
+
+declare const stubFalse: LodashStubFalse;
+export default stubFalse;

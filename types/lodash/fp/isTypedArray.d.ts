@@ -1,2 +1,5 @@
-import { isTypedArray } from "../fp";
-export = isTypedArray;
+import { _ } from "../fp";
+import LodashIsTypedArray = _.LodashIsTypedArray
+
+declare const isTypedArray: LodashIsTypedArray;
+export default isTypedArray;

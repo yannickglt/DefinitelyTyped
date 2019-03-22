@@ -1,2 +1,5 @@
-import { isNative } from "../fp";
-export = isNative;
+import { _ } from "../fp";
+import LodashIsNative = _.LodashIsNative
+
+declare const isNative: LodashIsNative;
+export default isNative;

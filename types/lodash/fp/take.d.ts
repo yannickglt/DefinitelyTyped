@@ -1,2 +1,5 @@
-import { take } from "../fp";
-export = take;
+import { _ } from "../fp";
+import LodashTake = _.LodashTake
+
+declare const take: LodashTake;
+export default take;

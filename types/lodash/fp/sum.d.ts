@@ -1,2 +1,5 @@
-import { sum } from "../fp";
-export = sum;
+import { _ } from "../fp";
+import LodashSum = _.LodashSum
+
+declare const sum: LodashSum;
+export default sum;

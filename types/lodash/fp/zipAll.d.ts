@@ -1,2 +1,5 @@
-import { zipAll } from "../fp";
-export = zipAll;
+import { _ } from "../fp";
+import LodashZip = _.LodashZip
+
+declare const zipAll: LodashZip;
+export default zipAll;

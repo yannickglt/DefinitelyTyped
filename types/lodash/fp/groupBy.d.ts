@@ -1,2 +1,5 @@
-import { groupBy } from "../fp";
-export = groupBy;
+import { _ } from "../fp";
+import LodashGroupBy = _.LodashGroupBy
+
+declare const groupBy: LodashGroupBy;
+export default groupBy;

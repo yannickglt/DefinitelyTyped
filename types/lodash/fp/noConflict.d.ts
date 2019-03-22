@@ -1,2 +1,5 @@
-import { noConflict } from "../fp";
-export = noConflict;
+import { _ } from "../fp";
+import LodashNoConflict = _.LodashNoConflict
+
+declare const noConflict: LodashNoConflict;
+export default noConflict;

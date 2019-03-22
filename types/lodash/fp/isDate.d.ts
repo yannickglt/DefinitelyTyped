@@ -1,2 +1,5 @@
-import { isDate } from "../fp";
-export = isDate;
+import { _ } from "../fp";
+import LodashIsDate = _.LodashIsDate
+
+declare const isDate: LodashIsDate;
+export default isDate;

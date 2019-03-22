@@ -1,2 +1,5 @@
-import { isPlainObject } from "../fp";
-export = isPlainObject;
+import { _ } from "../fp";
+import LodashIsPlainObject = _.LodashIsPlainObject
+
+declare const isPlainObject: LodashIsPlainObject;
+export default isPlainObject;

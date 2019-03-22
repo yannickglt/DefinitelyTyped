@@ -1,2 +1,5 @@
-import { min } from "../fp";
-export = min;
+import { _ } from "../fp";
+import LodashMin = _.LodashMin
+
+declare const min: LodashMin;
+export default min;

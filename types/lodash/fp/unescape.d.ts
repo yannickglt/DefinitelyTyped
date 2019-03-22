@@ -1,2 +1,5 @@
-import { unescape } from "../fp";
-export = unescape;
+import { _ } from "../fp";
+import LodashUnescape = _.LodashUnescape
+
+declare const unescape: LodashUnescape;
+export default unescape;

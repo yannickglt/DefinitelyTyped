@@ -1,2 +1,5 @@
-import { xor } from "../fp";
-export = xor;
+import { _ } from "../fp";
+import LodashXor = _.LodashXor
+
+declare const xor: LodashXor;
+export default xor;

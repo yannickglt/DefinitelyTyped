@@ -1,2 +1,5 @@
-import { words } from "../fp";
-export = words;
+import { _ } from "../fp";
+import LodashWords = _.LodashWords
+
+declare const words: LodashWords;
+export default words;

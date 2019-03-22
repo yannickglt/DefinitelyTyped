@@ -109,9 +109,7 @@ async function main() {
         "",
         'import lodash = require("./index");',
         "",
-        "export = _;",
-        "",
-        "declare const _: _.LoDashFp;",
+        "export declare const _: _;",
         "declare namespace _ {",
         interfaceStrings,
         "",
@@ -121,6 +119,8 @@ async function main() {
         "        placeholder: lodash.__;",
         "    }",
         "}",
+        "",
+        ...interfaceGroups.map(g => `export declare const ${g.functionName}: _.${g.interfaces[0].name};`),
         "",
     ].join(lineBreak);
     fs.writeFile(path.join("..", "fp.d.ts"), fpFile, (err) => {
@@ -200,13 +200,16 @@ async function processDefinitions(filePaths: string[], commonTypes: string[]): P
         // Assuming the maximum arity is 4. Pass one more arg than the max arity so we can detect if arguments weren't fixed.
         interfaces: builderFp[functionName]([0], [1], [2], [3], [4])([0], [1], [2], [3], [4]),
     }));
-    for (const functionName of functionNames) {
+    for (const g of interfaceGroups) {
         const output = [
-            `import { ${functionName} } from "../fp";`,
-            `export = ${functionName};`,
+            'import { _ } from "../fp";',
+            `import ${g.interfaces[0].name} = _.${g.interfaces[0].name};`,
+            "",
+            `declare const ${g.functionName}: ${g.interfaces[0].name};`,
+            `export default ${g.functionName};`,
             "",
         ].join(lineBreak);
-        const targetFile = `../fp/${functionName}.d.ts`;
+        const targetFile = `../fp/${g.functionName}.d.ts`;
         fs.writeFile(targetFile, output, (err) => {
             if (err)
                 console.error(`failed to write file: ${targetFile}`, err);

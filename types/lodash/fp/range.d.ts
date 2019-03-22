@@ -1,2 +1,5 @@
-import { range } from "../fp";
-export = range;
+import { _ } from "../fp";
+import LodashRange = _.LodashRange
+
+declare const range: LodashRange;
+export default range;

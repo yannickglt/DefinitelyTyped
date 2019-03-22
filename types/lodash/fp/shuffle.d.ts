@@ -1,2 +1,5 @@
-import { shuffle } from "../fp";
-export = shuffle;
+import { _ } from "../fp";
+import LodashShuffle = _.LodashShuffle
+
+declare const shuffle: LodashShuffle;
+export default shuffle;

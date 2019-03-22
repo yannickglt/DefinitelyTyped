@@ -1,2 +1,5 @@
-import { findLastKey } from "../fp";
-export = findLastKey;
+import { _ } from "../fp";
+import LodashFindLastKey = _.LodashFindLastKey
+
+declare const findLastKey: LodashFindLastKey;
+export default findLastKey;

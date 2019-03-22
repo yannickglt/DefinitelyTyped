@@ -1,2 +1,5 @@
-import { isInteger } from "../fp";
-export = isInteger;
+import { _ } from "../fp";
+import LodashIsInteger = _.LodashIsInteger
+
+declare const isInteger: LodashIsInteger;
+export default isInteger;

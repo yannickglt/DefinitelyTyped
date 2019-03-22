@@ -1,2 +1,5 @@
-import { all } from "../fp";
-export = all;
+import { _ } from "../fp";
+import LodashEvery = _.LodashEvery
+
+declare const all: LodashEvery;
+export default all;

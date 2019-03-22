@@ -1,2 +1,5 @@
-import { assoc } from "../fp";
-export = assoc;
+import { _ } from "../fp";
+import LodashSet = _.LodashSet
+
+declare const assoc: LodashSet;
+export default assoc;

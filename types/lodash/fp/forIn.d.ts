@@ -1,2 +1,5 @@
-import { forIn } from "../fp";
-export = forIn;
+import { _ } from "../fp";
+import LodashForIn = _.LodashForIn
+
+declare const forIn: LodashForIn;
+export default forIn;

@@ -1,2 +1,5 @@
-import { property } from "../fp";
-export = property;
+import { _ } from "../fp";
+import LodashGet = _.LodashGet
+
+declare const property: LodashGet;
+export default property;

@@ -1,2 +1,5 @@
-import { symmetricDifferenceWith } from "../fp";
-export = symmetricDifferenceWith;
+import { _ } from "../fp";
+import LodashXorWith = _.LodashXorWith
+
+declare const symmetricDifferenceWith: LodashXorWith;
+export default symmetricDifferenceWith;

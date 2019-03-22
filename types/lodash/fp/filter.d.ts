@@ -1,2 +1,5 @@
-import { filter } from "../fp";
-export = filter;
+import { _ } from "../fp";
+import LodashFilter = _.LodashFilter
+
+declare const filter: LodashFilter;
+export default filter;

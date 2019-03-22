@@ -1,2 +1,5 @@
-import { inRange } from "../fp";
-export = inRange;
+import { _ } from "../fp";
+import LodashInRange = _.LodashInRange
+
+declare const inRange: LodashInRange;
+export default inRange;

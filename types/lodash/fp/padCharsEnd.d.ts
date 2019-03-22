@@ -1,2 +1,5 @@
-import { padCharsEnd } from "../fp";
-export = padCharsEnd;
+import { _ } from "../fp";
+import LodashPadEnd = _.LodashPadEnd
+
+declare const padCharsEnd: LodashPadEnd;
+export default padCharsEnd;

@@ -1,2 +1,5 @@
-import { curry } from "../fp";
-export = curry;
+import { _ } from "../fp";
+import LodashCurry = _.LodashCurry
+
+declare const curry: LodashCurry;
+export default curry;

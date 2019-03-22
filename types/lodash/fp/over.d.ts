@@ -1,2 +1,5 @@
-import { over } from "../fp";
-export = over;
+import { _ } from "../fp";
+import LodashOver = _.LodashOver
+
+declare const over: LodashOver;
+export default over;

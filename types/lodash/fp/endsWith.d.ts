@@ -1,2 +1,5 @@
-import { endsWith } from "../fp";
-export = endsWith;
+import { _ } from "../fp";
+import LodashEndsWith = _.LodashEndsWith
+
+declare const endsWith: LodashEndsWith;
+export default endsWith;

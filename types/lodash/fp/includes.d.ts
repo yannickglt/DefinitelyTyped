@@ -1,2 +1,5 @@
-import { includes } from "../fp";
-export = includes;
+import { _ } from "../fp";
+import LodashIncludes = _.LodashIncludes
+
+declare const includes: LodashIncludes;
+export default includes;

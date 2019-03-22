@@ -1,2 +1,5 @@
-import { indexBy } from "../fp";
-export = indexBy;
+import { _ } from "../fp";
+import LodashKeyBy = _.LodashKeyBy
+
+declare const indexBy: LodashKeyBy;
+export default indexBy;

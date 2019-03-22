@@ -1,2 +1,5 @@
-import { clone } from "../fp";
-export = clone;
+import { _ } from "../fp";
+import LodashClone = _.LodashClone
+
+declare const clone: LodashClone;
+export default clone;

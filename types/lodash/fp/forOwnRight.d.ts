@@ -1,2 +1,5 @@
-import { forOwnRight } from "../fp";
-export = forOwnRight;
+import { _ } from "../fp";
+import LodashForOwnRight = _.LodashForOwnRight
+
+declare const forOwnRight: LodashForOwnRight;
+export default forOwnRight;

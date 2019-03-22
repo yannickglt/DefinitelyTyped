@@ -1,2 +1,5 @@
-import { sortedLastIndexBy } from "../fp";
-export = sortedLastIndexBy;
+import { _ } from "../fp";
+import LodashSortedLastIndexBy = _.LodashSortedLastIndexBy
+
+declare const sortedLastIndexBy: LodashSortedLastIndexBy;
+export default sortedLastIndexBy;

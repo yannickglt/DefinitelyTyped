@@ -1,2 +1,5 @@
-import { pickBy } from "../fp";
-export = pickBy;
+import { _ } from "../fp";
+import LodashPickBy = _.LodashPickBy
+
+declare const pickBy: LodashPickBy;
+export default pickBy;

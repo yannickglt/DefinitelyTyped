@@ -1,2 +1,5 @@
-import { partial } from "../fp";
-export = partial;
+import { _ } from "../fp";
+import LodashPartial = _.LodashPartial
+
+declare const partial: LodashPartial;
+export default partial;

@@ -1,2 +1,5 @@
-import { flatten } from "../fp";
-export = flatten;
+import { _ } from "../fp";
+import LodashFlatten = _.LodashFlatten
+
+declare const flatten: LodashFlatten;
+export default flatten;

@@ -1,2 +1,5 @@
-import { invertObj } from "../fp";
-export = invertObj;
+import { _ } from "../fp";
+import LodashInvert = _.LodashInvert
+
+declare const invertObj: LodashInvert;
+export default invertObj;
